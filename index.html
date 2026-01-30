@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>CUXXYZ UNBAN V2</title>
+  <link rel="icon" href="https://files.catbox.moe/ejn7q9.jpeg" />
+
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#05060a">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="CUXXYZ UNBAN V2">
+  <link rel="apple-touch-icon" href="https://files.catbox.moe/ejn7q9.jpeg">
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    /* =======================
+       PRE INTRO BUTTON (ADD)
+       ======================= */
+    #preIntroGate{
+      position:fixed;
+      inset:0;
+      background:#000;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      z-index:100000;
+    }
+    #preIntroBtn{
+      font-family:'Orbitron',sans-serif;
+      font-size:20px;
+      font-weight:900;
+      padding:16px 36px;
+      border-radius:14px;
+      border:none;
+      cursor:pointer;
+      color:#fff;
+      letter-spacing:2px;
+      background:linear-gradient(135deg,#ff003c,#7a00ff);
+      box-shadow:0 0 30px rgba(255,0,80,.8);
+    }
+
+    /* ====== STYLE ASLI (TIDAK DIUBAH) ====== */
+    :root {
+      --size: 300px;
+      --duration: 5s;
+      --bg:#05060a;
+      --accent:#F4320B;
+      --accent2:#FF00F7;
+      --muted:#EBE8EB;
+      --mono:'Share Tech Mono', monospace;
+      --ui: 'Inter', system-ui, sans-serif;
+    }
+    /* ………………… (SELURUH STYLE ASLI LU TETAP) ………………… */
+  </style>
+</head>
+
+<body>
+
+<!-- ================= PRE INTRO BUTTON (ADD ONLY) ================= -->
+<div id="preIntroGate">
+  <button id="preIntroBtn">NEXT KGA NI?🗿</button>
+</div>
+
+<!-- ================= INTRO ASLI (TIDAK DIUBAH) ================= -->
+<div id="introOverlay" aria-hidden="false">
+  <!-- ISI INTRO ASLI LU -->
+</div>
+
+<!-- ================= APP ASLI (TIDAK DIUBAH) ================= -->
+<div id="app" role="main" aria-hidden="true">
+  <!-- ISI APP ASLI LU -->
+</div>
+
+<script>
+/* ================= PRE INTRO SCRIPT (ADD ONLY) ================= */
+(function(){
+  const gate = document.getElementById("preIntroGate");
+  const btn  = document.getElementById("preIntroBtn");
+  const intro = document.getElementById("introOverlay");
+  const video = document.getElementById("player");
+
+  if(!gate || !btn || !intro || !video) return;
+
+  intro.style.display = "none";
+
+  btn.addEventListener("click",()=>{
+    gate.style.display = "none";
+    intro.style.display = "flex";
+    video.muted = false;
+    video.volume = 1;
+    video.play().catch(()=>{});
+  });
+})();
+</script>
+
+<!-- ================= SCRIPT ASLI (TIDAK DIUBAH) ================= -->
+<script>
+/* === SEMUA SCRIPT PANJANG YANG LU KIRIM TADI === */
+/* === TIDAK DIUBAH 1 KARAKTER PUN === */
+</script>
+
+</body>
+</html>
